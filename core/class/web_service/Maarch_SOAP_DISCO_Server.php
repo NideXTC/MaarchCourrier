@@ -1,10 +1,12 @@
 <?php
 
-if (version_compare(PHP_VERSION, '7.0.0') >= 0) {
+// Problem w/ php 5.6
+
+//if (version_compare(PHP_VERSION, '7.0.0') >= 0) {
     require_once('apps/maarch_entreprise/tools/PEAR/SOAP/Disco.php');
-} else {
+/*} else {
     require_once('SOAP/Disco.php');
-}
+}*/
 require_once('core/class/Url.php');
 
 class Maarch_SOAP_DISCO_Server extends SOAP_DISCO_Server
